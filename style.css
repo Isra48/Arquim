@@ -1,7 +1,6 @@
-/*Screen-wide settings */
+/* General setings Screen-wide settings */
 body,
 html {
-  height: 100%;
   margin: 0 auto;
   letter-spacing: 2px;
   font-size: 10px;
@@ -11,7 +10,7 @@ html {
 /*
 Hide the element to be animated*/
 .invisible {
-	visibility: hidden;
+  visibility: hidden;
 }
 
 /*
@@ -24,61 +23,34 @@ Background to fix*/
   justify-content: center;
   height: 100%;
   padding: 5%;
-  
-}
-.title{
-  font-family: Roboto,sans-serif;
-  font-weight: bold;
-  color: #222;/*
-  Letter color*/
-  font-size: 4rem;
-  padding-bottom: .2em;
-
-}
-.subtitle1{
-    font-size: 2rem;
-    font-weight: 400;
-    margin-top: .5em ;
-    color: #1c2122;
 }
 
-.title-us{
-    color: #f2f2f2;
-    font-size: 5rem;
-    font-weight: 300;
-    padding-left: .5em;
-}
-
-.btn-1{
-  position: relative;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 20px;
-  color: #3b3b3b;
-  border-bottom: solid #FF3860 2px;
-  margin-bottom: 10vh;
-}
-
+/*/////Componentes/////*/
 .parallax-bg {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
-  
+  min-height: 100vh;
 }
+
+.btn-1 {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 20px;
+  color: #3b3b3b;
+  border-bottom: solid #ff3860 2px;
+  margin-bottom: 10vh;
+}
+
 /*
 Image of each background*/
-.img-bg-01 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: #d9d9d9;
-  
-  
-}
-.img-bg-02, .img-bg-03, .img-bg-04, .img-bg-05{
+
+.img-bg-02,
+.img-bg-03,
+.img-bg-04,
+.img-bg-05 {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -86,32 +58,153 @@ Image of each background*/
   justify-content: center;
   background-color: #d9d9d9;
 }
- 
 
-/*
-Content to scroll*/
+/*////////////////////////////////////////////// */
+/*////////////////////////////////////////////// */
+/*Inician Seciones */
+/*////////////////////////////////////////////// */
+/*////////////////////////////////////////////// */
+/*////////////////////////////////////////////// */
+
+/*Section1 */
+
+.title {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  color: #222; /*
+  Letter color*/
+  font-size: 5em;
+  padding-bottom: 0.2em;
+}
+.subtitle1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 0.5em;
+  color: #1c2122;
+}
+
 .scrollbox1 {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('/img/bg.png');
-  
+  background-image: url("/img/bg.png");
 }
 
-/* Media querys img bg*/
+/*////////////////////////////////////////////// */
+/*Section2 intro id nosotros */
 
+.s2 {
+  min-height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9d9d9;
+}
 
+.title-bg-01 {
+  font-family: Roboto, sans-serif;
+  font-size: 4em;
+  color: #000;
+  padding-left: 3em;
+}
 
+.section-img-bg-1 {
+  height: 100vh;
+  margin: 10em;
+}
+@media screen and (max-width: 480px) {
+  .divs1 {
+    height: 95vh !important;
+  }
 
+  .logo1 {
+    width: 15em !important;
+  }
+  .title {
+    text-align: center;
+    font-size: 3em;
+  }
+  .subtitle1 {
+    font-size: 2em;
+  }
+  .s2 {
+    flex-direction: column;
+  }
+  .title-bg-01 {
+    padding-left: 0;
+    padding-top: 2em;
+    text-align: center;
+    margin: 1.5em;
+    font-size: 3em;
+  }
+  .section-img-bg-1 {
+    width: auto;
+    height: 100%;
+    margin-top: 1em;
+  }
+  .titles4 {
+    text-align: center;
+    margin: 5em 1.5em 1em 1.5em;
+  }
 
+  .divs4 {
+    min-height: 0 !important;
+  }
+  .s5,
+  .scrollbox3,
+  .scrollbox {
+  }
+}
+/*////////////////////////////////////////////// */
+/*Section3 Nosotros copies */
 
 .scrollbox2 {
   background-color: #1c2122;
-}
-.scrollbox2 {
   color: #fff;
+  min-height: 100vh;
 }
+
+.l-multicolumn {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin: 50px -20px;
+}
+
+.title-us {
+  color: #f2f2f2;
+  font-size: 3rem;
+  font-weight: 300;
+  padding-left: 0.5em;
+}
+
+.section-item-description {
+  padding: 0em 25px;
+  font-size: 13px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.line {
+  position: relative;
+  border: 3px solid #ff3860;
+  height: 200px;
+  width: 0px;
+  top: 40px;
+}
+
+@media screen and (max-width: 959px) {
+  /* CSS for 959px and below (for tablets) */
+  .forweb {
+    display: none;
+  }
+}
+
+/*////////////////////////////////////////////// */
+/*Section4 Delicado diseño de interiores */
+
 .scrollbox3 {
   background-color: #1c2122;
   color: #fff;
@@ -119,76 +212,22 @@ Content to scroll*/
 .scrollbox4 {
   background-color: #1c2122;
   color: #fff;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .scrollbox5 {
   padding-top: none;
   justify-content: flex-start;
   background-image: url("https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
-  background-size:  cover; 
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   color: #fff;
 }
 .scrollbox6 {
   background-color: #1c2122;
   color: #fff;
-}
-
-/*2nd slide*/
-.title-bg-01{
-  font-family: Roboto,sans-serif;
-  font-size: 4em;
-  color: #000;
-}
-.section-img-bg-1 {
-  height: 80%;
-  padding-left: 40px;
-}
-@media screen and (max-width: 959px) {
-	/* 
-CSS for 959px and below (for tablets) */
-  .parallax-bg > .section-img-bg-1 {
-  height: 50%;
-  padding-left: 0;
-}
-.img-bg-01{
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 480px) {
-	/* CSS applied to 480px or less (for smartphones) */
-  .section-img-bg-1 {
-  height: 50%;
-  padding-left: auto;
-  padding-right: auto;
-}
-  .parallax-bg > .img-bg-01{
-    flex-direction: column;
-  }
-}
-
-/* 
-In About */
-.l-multicolumn {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
-	margin: 50px -20px;
-}
-
-.line{
-  position: relative;
-  border: 3px solid #ff3860;
-  height: 200px;
-  width: 0px;
-  top: 40px;
-}
-.section-item-description {
-  padding: 0em 25px;
-  font-size: 13px;
-  line-height: 30px;
-  text-align: left;
-  
 }
 
 .section-description {
@@ -198,98 +237,154 @@ In About */
 }
 .section-description p {
   margin: 1.5em 0;
-  
 }
 .section-form {
   width: 60%;
   margin: 2em auto;
 }
 
-p{
+p {
   font-size: 16px;
   font-family: sans-serif;
 }
 @media screen and (max-width: 959px) {
-	/* 
+  .divs1 {
+    height: 95vh;
+  }
+  .s2 {
+    display: block;
+  }
+  .title-bg-01 {
+    padding-top: 2em;
+  }
+
+  .section-img-bg-1 {
+    padding: none;
+    width: auto;
+    height: 110%;
+    margin-left: -4em;
+    margin-right: 0;
+  }
+
+  /* 
 For tablets*/
-  
 }
 @media screen and (max-width: 480px) {
-	/*
-For smartphones*/
+  /*For smartphones*/
+  .logo1 {
+    width: 12em;
+  }
+  .subtitle1 {
+    text-align: center;
+  }
+  .title-bg-01 {
+    display: block;
+    margin-top: -3em;
+  }
+
+  .section-img-bg-1 {
+    width: 100%;
+    padding: auto;
+    margin-left: 0.2em;
+  }
 }
 
 /*In Soft Modern*/
-.frame-bg-02{
+.frame-bg-02 {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.section-img-bg-02{
+.section-img-bg-02 {
   height: 400px;
-  padding: 10px; 
+  padding: 10px;
 }
-.img-bg-02 p{
+
+.section-img-bg-03 {
+  display: none;
+  height: 400px;
+  padding: 10px;
+}
+.img-bg-02 p {
   max-width: 50%;
   text-align: center;
 }
-.animate__delay-2s{
-  animation-delay: .25s;
+.animate__delay-2s {
+  animation-delay: 0.25s;
 }
-.animate__delay-3s{
-  animation-delay: .5s;
+.animate__delay-3s {
+  animation-delay: 0.5s;
 }
 @media screen and (max-width: 959px) {
-	/* CSS for 959px and below (for tablets) */
-  .frame-bg-02{
-  box-sizing: border-box;
-  flex-direction: column;
-}
-  .section-img-bg-02{
+  /* CSS for 959px and below (for tablets) */
+
+  .section-img-bg-02-5 {
     height: 300px;
   }
 }
 @media screen and (max-width: 480px) {
-	/* CSS applied to 480px or less (for smartphones) */
-  .frame-bg-02{
-  box-sizing: border-box;
-  flex-direction: column;
-}
-.section-img-bg-02{
-    height: 300px;
+  /* CSS applied to 480px or less (for smartphones) */
+  .frame-bg-02 {
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+
+  .section-img-bg-03 {
+    display: flex;
+    height: 100% !important;
+    width: auto;
+    padding: 3em;
+  }
+
+  .frame-bg-03 {
+    flex-direction: column;
   }
 }
 
+/*Aqui/////////*/
+.section-img-bg-03 {
+  display: flex;
+  flex-direction: row;
+  height: 100% !important;
+  width: auto;
+  padding: 3em;
+}
+
+.section-img-bg-02-5 {
+  display: none;
+  height: 300px;
+}
+
 /*bg-03*/
-.frame-bg-03{
+.frame-bg-03 {
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+  flex-direction: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   text-align: justify;
 }
-.title-bg-03{
-  font-size: 3em; 
+.title-bg-03 {
+  font-size: 2.5em;
   color: #fff;
 }
-.section-img-bg-03{
+.section-img-bg-03 {
   height: 150px;
   width: 250px;
   margin: 2px;
 }
 
 /*scrollbox5*/
-.scrollbox5 header{
+.scrollbox5 header {
   margin-top: -6%; /*not shore*/
   height: 20vh;
   width: 100vw;
   background-color: #1c2122;
   padding: 40px 0 0 40px;
 }
-.salebanner{
+.salebanner {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -300,7 +395,7 @@ For smartphones*/
   margin-top: -50px;
   margin-right: -30vw;
 }
-.column-5{
+.column-5 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -312,7 +407,7 @@ For smartphones*/
   text-decoration: none;
   font-size: 20px;
 }
-.black{
+.black {
   height: 80px;
   width: 200px;
   background: #1c2122;
@@ -320,13 +415,13 @@ For smartphones*/
 }
 
 /*Contact*/
-.contact-form{
+.contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-form{
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -334,89 +429,93 @@ form{
   margin: 40px;
 }
 .feedback-input {
-  color:white;
+  color: white;
   font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
+  font-weight: 500;
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #b4b4b4;
+  border: 2px solid #b4b4b4;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
-  width:100%;
+  width: 100%;
   box-sizing: border-box;
-  outline:0;
+  outline: 0;
 }
 
-.feedback-input:focus { border:2px solid #3c3c3c; }
+.feedback-input:focus {
+  border: 2px solid #3c3c3c;
+}
 
 textarea {
   height: 150px;
   line-height: 150%;
-  resize:vertical;
+  resize: vertical;
 }
 
 [type="submit"] {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 100%;
-  background:#3c3c3c;
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
+  background: #3c3c3c;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
   outline: none;
-  color:white;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
+  margin-top: -4px;
+  font-weight: 700;
 }
-[type="submit"]:hover { background: #1c2122; }
+[type="submit"]:hover {
+  background: #1c2122;
+}
 
 @media screen and (max-width: 959px) {
-	/* 
+  /* 
 CSS for 959px and below (for tablets) */
 }
 @media screen and (max-width: 480px) {
-	/* CSS applied to 480px or less (for smartphones) */
- .img-bg-05 .frame-bg-02{
-     flex-direction: column;
+  /* CSS applied to 480px or less (for smartphones) */
+  .img-bg-05 .frame-bg-02 {
+    flex-direction: column;
   }
 }
 
-@media screen and (max-width: 959px) {
-	/* CSS for 959px and below (for tablets) */
-  .forweb{
-    display: none;
-  }
-}
 @media screen and (max-width: 480px) {
-	/* CSS applied to 480px or less (for smartphones) */
-  
+  /* CSS applied to 480px or less (for smartphones) */
 }
 
-.ctawhats{
-    color:#222;
-    text-decoration: none;
-    padding: 1.5em;
-    font-size: 1.5em;
+.ctawhats {
+  color: #222;
+  text-decoration: none;
+  padding: 1em;
+  font-size: 1.5em;
 }
 .whatsapp {
-    position:fixed;
-    width:80px;
-    height:80px;
-    bottom:40px;
-    right:40px;
-   
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    z-index:100;
-  }
-  
-  .whatsapp-icon {
-    margin-top:13px;
-  }
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 40px;
+  right: 40px;
+
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 13px;
+}
+
+.logo1 {
+  width: 25em;
+  padding: 2em;
+}
+
+/*Mediaquerys mobile*/
